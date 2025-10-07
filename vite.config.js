@@ -12,7 +12,20 @@ export default {
     {
         outDir: '../dist', // Output in the dist/ folder
         emptyOutDir: true, // Empty the folder first
-        sourcemap: true // Add sourcemap
+        sourcemap: true, // Add sourcemap
+        // Increase the warning threshold and split large vendor libraries into separate chunks
+        chunkSizeWarningLimit: 700,
+        rollupOptions: {
+            output: {
+                manualChunks(id) {
+                    if (id.includes('node_modules')) {
+                        if (id.includes('three')) return 'vendor_three'
+                        if (id.includes('lil-gui')) return 'vendor_lil-gui'
+                        return 'vendor'
+                    }
+                }
+            }
+        }
     },
     plugins:
     [

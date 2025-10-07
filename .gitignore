@@ -35,3 +35,4 @@ build/
 # If you intentionally check fonts or textures into the repo, remove these lines
 static/textures/
 fonts/
+.vercel
