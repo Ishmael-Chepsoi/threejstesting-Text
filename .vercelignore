@@ -1,0 +1,8 @@
+node_modules/
+.git/
+.vscode/
+dist/**/.gitkeep
+*.log
+README.md
+static/textures/
+fonts/
