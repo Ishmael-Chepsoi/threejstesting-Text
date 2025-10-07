@@ -36,7 +36,6 @@ const matcapTexture = textureLoader.load('/textures/matcaps/8.png')
 */
 
 const fontLoader = new FontLoader()
-const texture = textureLoader.load()
 fontLoader.load(
     '/fonts/helvetiker_regular.typeface.json',
     (font) =>

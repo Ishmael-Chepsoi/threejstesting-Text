@@ -4,5 +4,3 @@ node_modules/
 dist/**/.gitkeep
 *.log
 README.md
-static/textures/
-fonts/
