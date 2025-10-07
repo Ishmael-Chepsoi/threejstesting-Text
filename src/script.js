@@ -1,6 +1,8 @@
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js'
 import GUI from 'lil-gui'
+// Import font as an asset URL so Vite copies it to the build and returns a usable path
+import helvetikerUrl from './fonts/helvetiker_regular.typeface.json?url'
 import { FontLoader } from 'three/examples/jsm/loaders/FontLoader.js'
 import { TextGeometry } from 'three/examples/jsm/geometries/TextGeometry.js'
 
@@ -37,7 +39,7 @@ const matcapTexture = textureLoader.load('/textures/matcaps/8.png')
 
 const fontLoader = new FontLoader()
 fontLoader.load(
-    '/fonts/helvetiker_regular.typeface.json',
+    helvetikerUrl,
     (font) =>
     {
         const textGeometry = new TextGeometry(
