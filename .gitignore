@@ -1,0 +1,37 @@
+# Node
+node_modules/
+
+# Vite / build
+dist/
+.vite/
+
+# Logs
+*.log
+
+# Optional npm cache directory
+.npm
+
+# Environment files
+.env
+.env.*
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Editors
+.vscode/
+.idea/
+
+# TypeScript
+*.tsbuildinfo
+
+# Build artifacts
+build/
+
+# If you intentionally check fonts or textures into the repo, remove these lines
+static/textures/
+fonts/
